@@ -4,11 +4,9 @@ import '../App.css'
 
 const Header = () => (
   <div className='header'>
-
     <Link to='/' className='link-home'>Home</Link>
     <Link to='/jobs' className='link-jobs'>Jobs</Link>
     <Link to='/creation' className='link-creation'>Creation</Link>
-
   </div>
 )
 

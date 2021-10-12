@@ -10,7 +10,7 @@ const Home = () => (
     </div>
 
     <div className='intro'>
-      The next expansion to the critically acclaimed MMORPG with a free trial up to level 60 is right around the corner.
+      The next expansion to the critically acclaimed MMORPG with a free trial up to level 60 including the Heavensward expansion is right around the corner.
     </div>
 
     <div className='journey'>
