@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import ToTheEdge from '../audio/totheedge.mp3'
+import React from 'react';
+import audio from '../audio/totheedge.mp3';
 
-export default class extends Component {
+class ToTheEdge extends React.Component {
   componentDidMount() {
     const audioEl = document.getElementsByClassName("audio-element")[0]
     audioEl.volume=0.1;
@@ -12,9 +12,11 @@ export default class extends Component {
     return (
       <div>
         <audio className="audio-element">
-          <source src={ToTheEdge}></source>
+          <source src={audio}></source>
         </audio>
       </div>
     )
   }
 }
+
+export default ToTheEdge;

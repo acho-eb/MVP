@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Prelude from '../audio/prelude.mp3'
+import React from "react"
+import audio from '../audio/prelude.mp3'
 
-export default class extends Component {
+class Prelude extends React.Component {
   componentDidMount() {
     const audioEl = document.getElementsByClassName("audio-element")[0]
     audioEl.volume=0.1;
@@ -12,9 +12,11 @@ export default class extends Component {
     return (
       <div>
         <audio className="audio-element">
-          <source src={Prelude}></source>
+          <source src={audio}></source>
         </audio>
       </div>
     )
   }
 }
+
+export default Prelude;
