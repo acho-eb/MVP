@@ -19,13 +19,11 @@ const Home = () => (
 
       <div className='home-job'>
 
-
         <Link to='/jobs' className='home-jobs'>Jobs</Link>
 
       </div>
 
       <div className='home-creation'>
-
 
         <Link to='/creation' className='home-creations'>Creation</Link>
 
