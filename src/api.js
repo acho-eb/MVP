@@ -1,7 +1,12 @@
+import palicon from './images/palicon.png';
+import palbg from './images/paladin.png';
+
+import waricon from './images/waricon.png';
+
 const JobAPI = {
   jobs: [
-    { link: 'paladin', name: "Paladin"},
-    { link: 'warrior', name: "Warrior"}
+    { link: 'paladin', bg: palbg, name: "Paladin", icon: palicon, role: "Tank"},
+    { link: 'warrior', name: "Warrior", icon: waricon, role: "Tank"}
   ],
   all: function() { return this.jobs},
   get: function(link) {

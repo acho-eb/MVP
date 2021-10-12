@@ -9,11 +9,15 @@ const Job = (props) => {
     return <div>Sorry, but the player was not found</div>
   }
   return (
-    <div>
-      {console.log(props)}
-      {/* <h1>{player.name} (#{player.number})</h1>
-      <h2>Position: {player.position}</h2>
-      <Link to='/roster'>Back</Link> */}
+    <div className='job' style={{ backgroundImage: `url(${job.bg})`}}>
+      <h1 className='job-name'>{job.name}</h1>
+
+      <img className='job-icon' src={job.icon} alt='job icon'/>
+
+      <h2 className='job-role'>{job.role}</h2>
+
+
+      <Link to='/jobs'>Back</Link>
     </div>
   )
 }

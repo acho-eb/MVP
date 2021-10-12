@@ -1,3 +1,5 @@
+/* Home */
+
 .home {
   display: grid;
   background: no-repeat center center fixed;
@@ -13,24 +15,64 @@
 .header {
   display: grid;
   grid-template-columns: 10% 10% 10% 70%;
-  grid-template-rows: 33% 33% 33%;
+  /* grid-template-rows: 33% 33% 33%; */
   height: 8vh;
+  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.9))
 }
 
 .link-home {
   grid-column: 1/2;
-  grid-row: 2/3;
+  padding-top: 3vh;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+.link-home:hover {
+  grid-column: 1/2;
+  color: rgba(30, 201, 175, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .link-jobs {
   grid-column: 2/3;
-  grid-row: 2/3;
+  padding-top: 3vh;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+.link-jobs:hover {
+  grid-column: 2/3;
+  color: rgba(30, 201, 175, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .link-creation {
   grid-column: 3/4;
-  grid-row: 2/3;
+  padding-top: 3vh;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+.link-creation:hover {
+  grid-column: 3/4;
+  color: rgba(30, 201, 175, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Job */
+
+.job {
+  display: grid;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 }
