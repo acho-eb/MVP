@@ -7,29 +7,25 @@ const Home = () => (
   <div className='home' style={{ backgroundImage: `url(${background})` }}>
 
     <div className='home-welcome'>
-      Welcome to Eorzea!
+      WELCOME TO EORZEA
     </div>
 
-    <div className='intro'>
-      The next expansion to the critically acclaimed MMORPG with a free trial up to level 60 including the Heavensward expansion is right around the corner.
-    </div>
-
-    <div className='journey'>
-      Time to start your journey.
+    <div className='home-journey'>
+      TIME TO START YOUR JOURNEY
     </div>
 
     <div className='home-choose'>
-      Choose one of the following:
+      CHOOSE ONE OF THE FOLLOWING
 
       <div className='home-job'>
-        Start by finding the right job
+
 
         <Link to='/jobs' className='home-jobs'>Jobs</Link>
 
       </div>
 
       <div className='home-creation'>
-        Create a name
+
 
         <Link to='/creation' className='home-creations'>Creation</Link>
 

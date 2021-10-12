@@ -8,6 +8,48 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  grid-template-rows: 20% 10% 10% 20% 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.home-welcome {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: rgba(255, 243, 202, 0.9);
+  text-shadow: 0px 0px 10px rgb(202, 138, 55);
+  font-size: xxx-large;
+}
+
+.home-journey {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: rgba(255, 243, 202, 0.9);
+  text-shadow: 0px 0px 10px rgb(202, 138, 55);
+  font-size: x-large;
+}
+
+.home-choose {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: rgba(255, 243, 202, 0.9);
+  text-shadow: 0px 0px 10px rgb(202, 138, 55);
+  font-size: x-large;
+}
+
+.home-jobs {
+  text-decoration: none;
+  color: rgb(85 26 139);
+}
+
+.home-creations {
+  text-decoration: none;
+  color: rgb(85 26 139);
 }
 
 /* Header */
