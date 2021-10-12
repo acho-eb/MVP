@@ -105,4 +105,47 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  grid-template-rows: 18% 2% 15% 10% 55%;
+  grid-template-columns: 15% 5% 15% 20% 45%;
+}
+
+.job-back {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 10%;
+}
+
+.job-name {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding-top: 20%;
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+  text-shadow: 0px 0px 15px yellow;
+  font-size: xxx-large;
+}
+
+.job-icon {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.job-role {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  font-family: 'Oswald', sans-serif;
+  padding-left: 5%;
+  color: white;
+}
+
+.job-description {
+  grid-column: 2/4;
+  grid-row: 5/6;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.job-back {
+  text-decoration: none;
+  color: white;
 }

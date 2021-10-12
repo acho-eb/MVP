@@ -17,8 +17,10 @@ const Job = (props) => {
 
       <h2 className='job-role'>{job.role}</h2>
 
+      <p className='job-description'>{job.description}</p>
 
-      <Link to='/jobs'>Back</Link>
+
+      <Link to='/jobs' className='job-back'><i class="fas fa-chevron-left"></i> Back </Link>
     </div>
   )
 }
