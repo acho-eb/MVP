@@ -2,6 +2,7 @@ import React from 'react';
 import JobAPI from '../api';
 import { Link } from 'react-router-dom';
 import Video from './Video.js';
+import ToTheEdge from './ToTheEdge'
 
 const Job = (props) => {
   const job = JobAPI.get(props.match.params.link)
@@ -22,6 +23,10 @@ const Job = (props) => {
 
       <div className='job-video'>
         <Video embedId={job.embed} />
+      </div>
+
+      <div className='job-audio'>
+        <ToTheEdge />
       </div>
 
       <Link to='/jobs' className='job-back'><i class="fas fa-chevron-left"></i> Back </Link>

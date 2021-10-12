@@ -1,6 +1,7 @@
 import React from 'react';
 import background from '../images/home.png'
 import { Link } from 'react-router-dom';
+import Prelude from './Prelude';
 
 const Home = () => (
   <div className='home' style={{ backgroundImage: `url(${background})` }}>
@@ -33,6 +34,11 @@ const Home = () => (
         <Link to='/creation' className='home-creations'>Creation</Link>
 
       </div>
+
+      <div className='home-audio'>
+        <Prelude />
+      </div>
+
     </div>
 
   </div>

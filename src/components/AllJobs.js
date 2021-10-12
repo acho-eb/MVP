@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import JobAPI from '../api.js'
-import background from '../images/jobs.png'
+import JobAPI from '../api.js';
+import background from '../images/jobs.png';
+import Prelude from './Prelude';
 
 const AllJobs = () => (
   <div className='all-jobs' style={{ backgroundImage: `url(${background})`}}>
@@ -13,6 +14,10 @@ const AllJobs = () => (
 
       </div>
     ))}
+
+    <div className='all-jobs-audio'>
+      <Prelude />
+    </div>
 
   </div>
 )

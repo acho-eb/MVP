@@ -105,8 +105,8 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  grid-template-rows: 18% 2% 15% 10% 15% 40%;
-  grid-template-columns: 15% 5% 15% 20% 45%;
+  grid-template-rows: 10% 2% 15% 10% 15% 25% 23%;
+  grid-template-columns: 15% 5% 15% 12% 8% 45%;
 }
 
 .job-back {
@@ -148,7 +148,7 @@
 }
 
 .job-video {
-  grid-column: 2/4;
+  grid-column: 2/5;
   grid-row: 6/7;
 }
 
