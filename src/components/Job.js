@@ -6,10 +6,11 @@ const Job = (props) => {
   const job = JobAPI.get(props.match.params.link)
 
   if (!job) {
-    return <div>Sorry, but the player was not found</div>
+    return <div>Sorry, but the job was not found</div>
   }
   return (
     <div className='job' style={{ backgroundImage: `url(${job.bg})`}}>
+
       <h1 className='job-name'>{job.name}</h1>
 
       <img className='job-icon' src={job.icon} alt='job icon'/>

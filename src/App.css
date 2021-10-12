@@ -65,6 +65,36 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* All Jobs */
+
+.all-jobs {
+  display: grid;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+  grid-template-rows: 25% 25% 25% 25%;
+  height: 100vh;
+}
+
+.all-jobs-paladin {
+  font-size: x-large;
+  grid-column: 17/19;
+  grid-row: 4/5;
+  text-decoration: none;
+  text-align: center;
+}
+
+.all-jobs-warrior {
+  grid-column: 13/15;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
+
 /* Job */
 
 .job {
