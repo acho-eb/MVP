@@ -5,8 +5,7 @@ import waricon from './images/waricon.png';
 
 const JobAPI = {
   jobs: [
-    { link: 'paladin', bg: palbg, name: 'PALADIN', icon: palicon, role: 'Tank', description: 'All men seek truth, be they children of Eorzea and freedom, or slaves born into imperial bondage.'
-  },
+    { link: 'paladin', bg: palbg, name: 'PALADIN', icon: palicon, role: 'Tank', description: 'All men seek truth, be they children of Eorzea and freedom, or slaves born into imperial bondage.', embed: '0SQaF6L1rtY'},
     { link: 'warrior', name: 'Warrior', icon: waricon, role: 'Tank'}
   ],
   all: function() { return this.jobs},
