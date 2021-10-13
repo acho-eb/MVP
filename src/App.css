@@ -226,6 +226,27 @@
   text-align: center;
 }
 
+.all-jobs-bard {
+  grid-column: 11/13;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-machinist {
+  grid-column: 11/13;
+  grid-row: 2/3;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-dancer {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
 
 
 /* Job */

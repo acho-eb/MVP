@@ -43,6 +43,15 @@ import rdmbg from './images/redmage.png';
 import bluicon from './images/bluicon.png';
 import blubg from './images/bluemage.png';
 
+import brdicon from './images/brdicon.png';
+import brdbg from './images/bard.png';
+
+import mchicon from './images/mchicon.png';
+import mchbg from './images/machinist.png';
+
+import dncicon from './images/dncicon.png';
+import dncbg from './images/dancer.png';
+
 const JobAPI = {
   jobs: [
     { link: 'paladin', bg: pldbg, name: 'PALADIN', icon: palicon, role: 'Tank', description: 'All men seek truth, be they children of Eorzea and freedom, or slaves born into imperial bondage.', embed: '0SQaF6L1rtY'},
@@ -60,6 +69,9 @@ const JobAPI = {
     { link: 'summoner', bg: smnbg, name: 'SUMMONER', icon: smnicon, role: 'Magic Ranged DPS', description: 'Will destruction rain down from the firmament? Or will it seep forth from the bowels of the nether? Whencesoever it cometh, man shall know such devastation as he hath never seen, nay not in his profoundest nightmare.', embed: 'TPbS4L-sLU8'},
     { link: 'redmage', bg: rdmbg, name: 'RED MAGE', icon: rdmicon, role: 'Magic Ranged DPS', description: 'Whether thou payest the prophecy heed is thy decision to make, and thine alone.', embed: 'iH2nblClyKU'},
     { link: 'bluemage', bg: blubg, name: 'BLUE MAGE', icon: bluicon, role: 'Magic Ranged DPS', description: 'Yet be fairly warned that disaster waiteth not for man.', embed: '5FAiRM570lY'},
+    { link: 'bard', bg: brdbg, name: 'BARD', icon: brdicon, role: 'Physical Ranged DPS', description: 'Shouldst thou find thy faith wanting, thou needst but look upon Dalamud\'s bloody visage, and from thence to the faces of thine own loved ones.', embed: 'y66RtFr26hs'},
+    { link: 'machinist', bg: mchbg, name: 'MACHINIST', icon: mchicon, role: 'Physical Ranged DPS', description: 'Man was ever wont to disbelieve and to delay, yet the Twelve have granted him a conscience that he might act at the last.', embed: '_2UbF3qJv_M'},
+    { link: 'dancer', bg: dncbg, name: 'DANCER', icon: dncicon, role: 'Physical Ranged DPS', description: 'Hark thou unto these words if thou wouldst hearken to naught else.', embed: 'KC9ox7kJktU'}
   ],
   all: function() { return this.jobs},
   get: function(link) {
