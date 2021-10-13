@@ -1,7 +1,8 @@
 import React from 'react';
 import '../App.css';
 import axios from 'axios';
-import background from '../images/select.png'
+import background from '../images/select.png';
+import Prelude from './Prelude';
 
 class Creation extends React.Component {
   constructor(props) {
@@ -58,7 +59,7 @@ class Creation extends React.Component {
       <div className='creation' style={{ backgroundImage: `url(${background})` }}>
 
         <div className='creation-start'>
-          Enter the name and server you would like to start
+          Create a name and select the server you would like to begin on
         </div>
 
         {searched ? null :
@@ -68,7 +69,7 @@ class Creation extends React.Component {
 
         {searched ? null :
           <div className='creation-server'>
-            The available servers to choose from are for the North American Data Center
+            The available servers for selection are from the North American Data Center
           </div>}
 
         {exists && searched ?
@@ -76,41 +77,38 @@ class Creation extends React.Component {
           : null}
 
         {!exists && searched ?
-          <div className='creation-congratulations'> Congratulations! {this.state.firstName} {this.state.lastName} is available to use in {this.state.server} </div>
+          <div className='creation-congratulations'> Congratulations! {this.state.firstName} {this.state.lastName} is available for use in {this.state.server} </div>
           : null}
 
-        <form onSubmit={this.handleSubmit}>
-          <label>
+        <form onSubmit={this.handleSubmit} className='creation-form'>
+          <label className='creation-first'>
             First Name:
             <input
               name='firstName'
               type='text'
               maxLength='15'
               value={this.state.value}
-              onChange={this.handleInputChange}
-              className='creation-first' />
+              onChange={this.handleInputChange} />
           </label>
 
           <br />
 
-          <label>
+          <label className='creation-last'>
             Last Name:
             <input
               name='lastName'
               type='text'
               maxLength='15'
               value={this.state.value}
-              onChange={this.handleInputChange}
-              className='creation-last' />
+              onChange={this.handleInputChange} />
           </label>
 
-          <label>
+          <label className='creation-select'>
             Server:
             <select
               name='server'
               value={this.state.server}
-              onChange={this.handleInputChange}
-              className='creation-select'>
+              onChange={this.handleInputChange} >
 
               <option value='Adamantoise'>Adamantoise</option>
               <option value='Cactuar'>Cactuar</option>
@@ -141,8 +139,12 @@ class Creation extends React.Component {
 
             </select>
           </label>
-          <input type='submit' value='Submit' />
+          <input className='creation-input' type='submit' value='Submit' />
         </form>
+
+        <div className='creation-audio'>
+          <Prelude />
+        </div>
 
       </div>
     )

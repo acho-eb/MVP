@@ -239,6 +239,107 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  grid-template-columns: 20% 5% 10% 5% 20% 5% 10% 5% 20%;
+  grid-template-rows: 15% 5% 10% 10% 20% 40%;
+}
+
+.creation-start {
+  font-family: 'Oswald', sans-serif;
+  grid-column: 2/9;
+  grid-row: 2/3;
+  text-align: center;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+  font-size: xx-large;
+}
+
+.creation-name {
+  font-family: 'Oswald', sans-serif;
+  grid-column: 4/7;
+  grid-row: 3/4;
+  padding-top: 10%;
+  text-align: center;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+  font-size: large;
+}
+
+.creation-server {
+  font-family: 'Oswald', sans-serif;
+  grid-column: 3/8;
+  grid-row: 4/5;
+  padding-top: 5%;
+  text-align: center;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+  font-size: large;
+}
+
+.creation-exists {
+  font-family: 'Oswald', sans-serif;
+  grid-column: 4/7;
+  grid-row: 3/4;
+  text-align: center;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+  font-size: x-large;
+  padding-top: 5%;
+}
+
+.creation-congratulations {
+  font-family: 'Oswald', sans-serif;
+  grid-column: 4/7;
+  grid-row: 3/4;
+  text-align: center;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+  font-size: x-large;
+  padding-top: 10%;
+}
+
+.creation-form {
+  grid-column: 5/6;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.creation-first {
+  color: white;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+}
+
+.creation-last {
+  color: white;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+}
+
+.creation-select {
+  color: white;
+  grid-column: 1/5;
+  grid-row: 3/4;
+  text-align: center;
+  padding-right: 10%;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(209, 237, 248);
+  text-shadow: 0px 0px 10px rgb(49, 118, 197);
+}
+
+.creation-input {
+  color: black;
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 /* Video */
