@@ -1,10 +1,154 @@
 import React from 'react';
 import '../App.css';
+import axios from 'axios';
+import background from '../images/select.png'
 
-const Creation = () => (
-  <div>
-    Hello World!
-  </div>
-)
+class Creation extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      firstName: '',
+      lastName: '',
+      server: 'Cactuar',
+      avatar: '',
+      exists: false,
+      searched: false
+    }
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleInputChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+
+    axios({
+      method: 'get',
+      url: `https://staging.xivapi.com/character/search?name=${this.state.firstName}+${this.state.lastName}&server=${this.state.server}`
+    })
+      .then((response) => {
+        console.log(response.data.Results[0])
+        if (response.data.Results[0]) {
+          this.setState({
+            avatar: response.data.Results[0].Avatar,
+            exists: true,
+            searched: true
+          })
+        } else {
+          this.setState({
+            exists: false,
+            searched: true
+          })
+        }
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
+  render() {
+    var searched = this.state.searched
+    var exists = this.state.exists
+    return (
+      <div className='creation' style={{ backgroundImage: `url(${background})` }}>
+
+        <div className='creation-start'>
+          Enter the name and server you would like to start
+        </div>
+
+        {searched ? null :
+          <div className='creation-name'>
+            Please choose a first and last name that are between 2 and 15 characters each, with a combined maximum of 20 characters
+          </div>}
+
+        {searched ? null :
+          <div className='creation-server'>
+            The available servers to choose from are for the North American Data Center
+          </div>}
+
+        {exists && searched ?
+          <div className='creation-exists'> This Warrior of Light already exists <img src={this.state.avatar} alt='avatar of character' /> </div>
+          : null}
+
+        {!exists && searched ?
+          <div className='creation-congratulations'> Congratulations! {this.state.firstName} {this.state.lastName} is available to use in {this.state.server} </div>
+          : null}
+
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            First Name:
+            <input
+              name='firstName'
+              type='text'
+              maxLength='15'
+              value={this.state.value}
+              onChange={this.handleInputChange}
+              className='creation-first' />
+          </label>
+
+          <br />
+
+          <label>
+            Last Name:
+            <input
+              name='lastName'
+              type='text'
+              maxLength='15'
+              value={this.state.value}
+              onChange={this.handleInputChange}
+              className='creation-last' />
+          </label>
+
+          <label>
+            Server:
+            <select
+              name='server'
+              value={this.state.server}
+              onChange={this.handleInputChange}
+              className='creation-select'>
+
+              <option value='Adamantoise'>Adamantoise</option>
+              <option value='Cactuar'>Cactuar</option>
+              <option value='Faerie'>Faerie</option>
+              <option value='Gilgamesh'>Gilgamesh</option>
+              <option value='Jenova'>Jenova</option>
+              <option value='Midgardsormr'>Midgardsormr</option>
+              <option value='Sargatanas'>Sargatanas</option>
+              <option value='Siren'>Siren</option>
+
+              <option value='Behemoth'>Behemoth</option>
+              <option value='Excalibur'>Excalibur</option>
+              <option value='Exodus'>Exodus</option>
+              <option value='Famfrit'>Famfrit</option>
+              <option value='Hyperion'>Hyperion</option>
+              <option value='Lamia'>Lamia</option>
+              <option value='Leviathan'>Leviathan</option>
+              <option value='Ultros'>Ultros</option>
+
+              <option value='Balmung'>Balmung</option>
+              <option value='Brynhildr'>Brynhildr</option>
+              <option value='Coeurl'>Coeurl</option>
+              <option value='Diabolos'>Diabolos</option>
+              <option value='Goblin'>Goblin</option>
+              <option value='Malboro'>Malboro</option>
+              <option value='Mateus'>Mateus</option>
+              <option value='Zalera'>Zalera</option>
+
+            </select>
+          </label>
+          <input type='submit' value='Submit' />
+        </form>
+
+      </div>
+    )
+  }
+}
+
+
 
 export default Creation;

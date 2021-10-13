@@ -229,6 +229,18 @@
   grid-row: 6/7;
 }
 
+/* Creation */
+
+.creation {
+  display: grid;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
 /* Video */
 
 .video-responsive {
