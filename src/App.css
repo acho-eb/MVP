@@ -198,6 +198,34 @@
   text-align: center;
 }
 
+.all-jobs-blackmage {
+  grid-column: 7/9;
+  grid-row: 2/3;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-summoner {
+  grid-column: 15/17;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-redmage {
+  grid-column: 4/6;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-bluemage {
+  grid-column: 19/21;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
 
 
 /* Job */
