@@ -87,6 +87,7 @@ class Creation extends React.Component {
               name='firstName'
               type='text'
               maxLength='15'
+              autoComplete='off'
               value={this.state.value}
               onChange={this.handleInputChange} />
           </label>
@@ -99,6 +100,7 @@ class Creation extends React.Component {
               name='lastName'
               type='text'
               maxLength='15'
+              autoComplete='off'
               value={this.state.value}
               onChange={this.handleInputChange} />
           </label>

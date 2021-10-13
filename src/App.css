@@ -170,6 +170,34 @@
   text-align: center;
 }
 
+.all-jobs-dragoon {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-monk {
+  grid-column: 16/18;
+  grid-row: 2/3;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-ninja {
+  grid-column: 8/10;
+  grid-row: 4/5;
+  font-size: x-large;
+  text-align: center;
+}
+
+.all-jobs-samurai {
+  grid-column: 14/16;
+  grid-row: 2/3;
+  font-size: x-large;
+  text-align: center;
+}
+
 
 
 /* Job */
