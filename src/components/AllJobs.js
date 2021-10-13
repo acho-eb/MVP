@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import JobAPI from '../api.js';
 import background from '../images/jobs.png';
-import Prelude from './Prelude';
+import Stormblood from './Stormblood';
 
 const AllJobs = () => (
   <div className='all-jobs' style={{ backgroundImage: `url(${background})`}}>
@@ -16,7 +16,7 @@ const AllJobs = () => (
     ))}
 
     <div className='all-jobs-audio'>
-      <Prelude />
+      <Stormblood />
     </div>
 
   </div>

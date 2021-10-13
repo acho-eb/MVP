@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import axios from 'axios';
 import background from '../images/select.png';
-import Prelude from './Prelude';
+import Twilight from './Twilight';
 
 class Creation extends React.Component {
   constructor(props) {
@@ -145,7 +145,7 @@ class Creation extends React.Component {
         </form>
 
         <div className='creation-audio'>
-          <Prelude />
+          <Twilight />
         </div>
 
       </div>
