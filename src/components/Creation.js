@@ -58,9 +58,10 @@ class Creation extends React.Component {
     return (
       <div className='creation' style={{ backgroundImage: `url(${background})` }}>
 
-        <div className='creation-start'>
-          Create a name and select the server you would like to begin on
-        </div>
+        {!exists && searched ? null :
+          <div className='creation-start'>
+            Check if your preferred name and server are available
+          </div>}
 
         {searched ? null :
           <div className='creation-name'>
