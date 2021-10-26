@@ -41,7 +41,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-I made a wikipedia visualizer for the online game: Final Fantasy XIV. I used React and React Router to allow seamless traversal through 21 different pages. Styling was done with pure HTML, CSS, and CSS grid.
+I developed an application that showcases the playable jobs in the online game: Final Fantasy XIV. I used React and React Router to allow seamless traversal through 21 different pages. Styling was done with pure HTML, CSS, and CSS grid.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
